@@ -1,10 +1,10 @@
-local plugins = require("lua.dinizgab.plugins")
+local plugins = require("dinizgab.plugins")
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
 local opts = {
     install = {
         missing = true,
-        colorscheme = { "gruvbox" }
+        colorscheme = { "tokyonight" }
     }
 }
 
