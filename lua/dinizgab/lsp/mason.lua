@@ -2,6 +2,7 @@ local servers = {
     "lua_ls",
     "gopls",
     "sqls",
+    "java_language_server",
 }
 
 local settings = {
