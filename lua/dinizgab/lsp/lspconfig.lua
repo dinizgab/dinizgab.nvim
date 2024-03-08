@@ -1,6 +1,9 @@
 local lspconfig = require("lspconfig")
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+lspconfig.pylsp.setup {
+    capabilities = capabilities
+}
 lspconfig.gopls.setup {
     capabilities = capabilities,
 }
@@ -14,8 +17,12 @@ lspconfig.lua_ls.setup {
         }
     }
 }
-lspconfig.java_language_server.setup {}
-lspconfig.rust_analyzer.setup {}
+lspconfig.java_language_server.setup {
+    capabilities = capabilities
+}
+lspconfig.rust_analyzer.setup {
+    capabilities = capabilities
+}
 
 vim.keymap.set('n', '<leader>de', vim.diagnostic.open_float)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)

@@ -3,6 +3,7 @@ local servers = {
     "gopls",
     "sqls",
     "java_language_server",
+    "pylsp",
 }
 
 local settings = {
