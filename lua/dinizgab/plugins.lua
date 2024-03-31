@@ -58,6 +58,9 @@ local plugins = {
             "nvim-tree/nvim-web-devicons",
         },
     },
+    {
+        "windwp/nvim-ts-autotag",
+    }
 }
 
 return plugins
