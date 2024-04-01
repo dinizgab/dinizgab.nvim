@@ -5,15 +5,14 @@ local plugins = {
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
     {
-        "ellisonleao/gruvbox.nvim",
-        priority = 1000,
-        config = true
-    },
-    {
         "folke/tokyonight.nvim",
         lazy = false,
         priority = 1000,
-        opts = {},
+    },
+    {
+        "rose-pine/neovim",
+        name = "rose-pine",
+        priority = 1000,
     },
     {
         'nvim-treesitter/nvim-treesitter',
