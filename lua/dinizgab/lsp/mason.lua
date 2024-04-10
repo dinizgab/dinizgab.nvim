@@ -4,8 +4,8 @@ local servers = {
     "sqls",
     "java_language_server",
     "pylsp",
-    "typescript-language-server",
-    "tailwindcss-language-server",
+    "tsserver",
+    "tailwindcss",
 }
 
 local settings = {
