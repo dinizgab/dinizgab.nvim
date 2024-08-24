@@ -17,9 +17,9 @@ lspconfig.lua_ls.setup {
         }
     }
 }
-lspconfig.java_language_server.setup {
-    capabilities = capabilities
-}
+--lspconfig.java_language_server.setup {
+--    capabilities = capabilities
+--}
 lspconfig.rust_analyzer.setup {
     capabilities = capabilities
 }
@@ -48,7 +48,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
         vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
         vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
         vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
-        vim.keymap.set('n', '<C-h>', vim.lsp.buf.signature_help, opts)
+        vim.keymap.set('n', '<leader>h', vim.lsp.buf.signature_help, opts)
         vim.keymap.set('n', '<leader>wa', vim.lsp.buf.add_workspace_folder, opts)
         vim.keymap.set('n', '<leader>wr', vim.lsp.buf.remove_workspace_folder, opts)
         vim.keymap.set('n', '<leader>wl', function()

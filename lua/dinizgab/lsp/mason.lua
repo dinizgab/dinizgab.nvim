@@ -2,7 +2,7 @@ local servers = {
     "lua_ls",
     "gopls",
     "sqls",
-    "java_language_server",
+    --"java_language_server",
     "pylsp",
     "tsserver",
     "tailwindcss",
