@@ -62,6 +62,12 @@ local plugins = {
     },
     {
         "windwp/nvim-ts-autotag",
+    },
+    {
+        "lewis6991/gitsigns.nvim",
+    },
+    {
+        "tpope/vim-fugitive",
     }
 }
 
