@@ -1,0 +1,14 @@
+require'nvim-treesitter.configs'.setup {
+<<<<<<< HEAD
+  ensure_installed = { "c", "lua", "go", "vimdoc", "sql", "python", "yaml", "rust", "java" },
+=======
+  ensure_installed = { "c", "lua", "go", "vimdoc", "sql", "python", "yaml", "rust", "java", "markdown", "markdown-inline" },
+>>>>>>> f058fab (init)
+  autotag = {
+    enable = true,
+  },
+  highlight = {
+ 	enable = true
+  }
+}
+
