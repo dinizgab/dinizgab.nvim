@@ -17,16 +17,22 @@ lspconfig.lua_ls.setup {
         }
     }
 }
---lspconfig.java_language_server.setup {
---    capabilities = capabilities
---}
+lspconfig.ast_grep.setup {
+    capabilities = capabilities
+}
 lspconfig.rust_analyzer.setup {
     capabilities = capabilities
 }
---lspconfig.tsserver.setup {
---    capabilities = capabilities
---}
+lspconfig.denols.setup {
+    capabilities = capabilities
+}
 lspconfig.tailwindcss.setup {
+    capabilities = capabilities
+}
+lspconfig.sqls.setup {
+    capabilities = capabilities
+}
+lspconfig.prettier.setup {
     capabilities = capabilities
 }
 

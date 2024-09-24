@@ -4,7 +4,7 @@ local servers = {
     "sqls",
     --"java_language_server",
     "pylsp",
-    --"tsserver",
+    "denols",
     "tailwindcss",
 }
 
