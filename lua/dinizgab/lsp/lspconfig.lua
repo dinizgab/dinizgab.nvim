@@ -17,13 +17,15 @@ lspconfig.lua_ls.setup {
         }
     }
 }
-lspconfig.ast_grep.setup {
-    capabilities = capabilities
-}
 lspconfig.rust_analyzer.setup {
     capabilities = capabilities
 }
-lspconfig.denols.setup {
+lspconfig.ts_ls.setup {
+    capabilities = capabilities,
+    root_dir = lspconfig.util.root_pattern("package.json"),
+    single_file_support = false
+}
+lspconfig.prismals.setup {
     capabilities = capabilities
 }
 lspconfig.tailwindcss.setup {
@@ -32,8 +34,9 @@ lspconfig.tailwindcss.setup {
 lspconfig.sqls.setup {
     capabilities = capabilities
 }
-lspconfig.prettier.setup {
-    capabilities = capabilities
+lspconfig.denols.setup {
+    capabilities = capabilities,
+    root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
 }
 
 vim.keymap.set('n', '<leader>de', vim.diagnostic.open_float)
