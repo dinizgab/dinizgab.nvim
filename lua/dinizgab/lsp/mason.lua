@@ -6,7 +6,7 @@ local servers = {
     "tailwindcss",
     "denols",
     "prismals",
-    "prettier",
+--    "prettier",
 }
 
 local settings = {

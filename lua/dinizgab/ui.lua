@@ -1,2 +1,3 @@
 vim.o.background = "dark"
-vim.cmd("colorscheme rose-pine")
+vim.cmd("colorscheme catppuccin-macchiato")
+vim.o.termguicolors = true
