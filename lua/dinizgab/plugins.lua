@@ -8,16 +8,6 @@ local plugins = {
         dependencies = { 'nvim-lua/plenary.nvim' }
     },
     {
-        "folke/tokyonight.nvim",
-        lazy = false,
-        priority = 1000,
-    },
-    {
-        "rose-pine/neovim",
-        name = "rose-pine",
-        priority = 1000,
-    },
-    {
         'nvim-treesitter/nvim-treesitter',
         event = { "BufReadPost", "BufNewFile" },
         cmd = { "TSInstall", "TSBufEnable", "TSBufDisable", "TSModuleInfo" },
@@ -32,13 +22,7 @@ local plugins = {
         'hrsh7th/cmp-path',
         'hrsh7th/cmp-cmdline',
         'hrsh7th/nvim-cmp',
-        --'saadparwaiz1/cmp_luasnip'
     },
-    --{
-    --    "L3MON4D3/LuaSnip",
-    --    version = "v2.*",
-    --    dependencies = { "rafamadriz/friendly-snippets" },
-    --},
     {
         'windwp/nvim-autopairs',
         event = "InsertEnter",
@@ -70,15 +54,12 @@ local plugins = {
         "tpope/vim-fugitive",
     },
     {
-        "ellisonleao/gruvbox.nvim",
-        priority = 1000,
-        config = true,
-        opts = ...
+        "catppuccin/nvim", name = "catppuccin", priority = 1000
     },
     {
-        "catppuccin/nvim", name = "catppuccin", priority = 1000
+        'nvim-lualine/lualine.nvim',
+        dependencies = { 'nvim-tree/nvim-web-devicons' }
     }
-
 }
 
 return plugins
